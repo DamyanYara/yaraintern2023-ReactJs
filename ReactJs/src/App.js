@@ -5,13 +5,16 @@ import './styles/app.less';
 import { GlobalStyle } from "./styles/app.css";
 import Header from "./components/Header/index";
 import Sidebar from "./components/Sidebar/index";
+import ErorrPage from "./components/ErorrPage";
 
 const App = () => {
     return (
-        <div>
-            <Header/>
-            <Sidebar/>
-        </div>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/error' component={ErorrPage}></Route>
+                <Route path='/'> <Header></Header> <Sidebar></Sidebar></Route>
+            </Switch>
+        </BrowserRouter>
     )
 }
 

@@ -13,7 +13,9 @@ const Header = () => {
         <Row gutter= '0px'>
             <Col xs={`${logoWidth}px`} gutter='0px' style ={{height:`${logoWidth}px`}}>
             <StyledImage
-                src={foto} alt='Foto' height={logoWidth} width={logoWidth}      
+                src={foto} alt='Foto' height={logoWidth} width={logoWidth}  
+                onClick={() => history.push('/')}
+                cursor='pointer'  
             />
             </Col>
             <Col xs = {`calc(100vw - ${logoWidth}px)`} gutter='0px'>

@@ -3,7 +3,28 @@ import styled  from "styled-components";
 export const StyledSidebar = styled.div`
 height: 100%;
 background: aqua;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 20px; 
+
 `;
+
+export const StyledSidebarImage = styled.img`
+width: ${(props) => `$(props.width)px` || 'initial'};
+height: ${(props) => `$(props.height)px` || 'initial'};
+cursor: pointer;
+margin-bottom: 20px;
+`;
+
+export const RemainImage = styled.div`
+background: grey;
+height: 100%;
+width: 100%;
+`;
+
+
+
 /*
 const StyledSidebarOption = styled.div`
 display: flex;
