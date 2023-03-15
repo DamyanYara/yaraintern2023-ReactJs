@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import {Row, Col} from 'react-flexa';
-import { StyledImage } from "../../styles/app.css";
-import {StyledSidebarOption, StyledOptionLabel, StyledSidebarImage, HandleContainer, RemainImage} from './style.css'
-import foto from '../../assets/images/logo2.png';
+import foto from '../../../assets/images/logo2.png';
 import { StyledSidebar } from "./style.css";
+import { StyledSidebarImage } from "./style.css";
+import { RemainImage } from "./style.css";
+
 
 const Sidebar = () => {
     const history = useHistory();
@@ -18,9 +19,13 @@ const Sidebar = () => {
             <StyledSidebar>
             <StyledSidebarImage
                 src={foto} alt='Foto' height={logoWidth/2} width={logoWidth/2}
+                onClick={() => history.push('/form')}
+                cursor='pointer' 
             />
              <StyledSidebarImage
                 src={foto} alt='Foto' height={logoWidth/2} width={logoWidth/2}
+                onClick={() => history.push('/table')}
+                cursor='pointer' 
             />
            </StyledSidebar>
             </Col>
