@@ -4,6 +4,7 @@ import { Route,Switch } from "react-router-dom";
 import Header from "./MainContainer/Header";
 import Sidebar from "./MainContainer/Sidebar";
 import Form from "./Form";
+import TableForm from "./Table/index";
 
 
 const MainContainer = () =>{
@@ -22,6 +23,7 @@ const MainContainer = () =>{
             <Col xs={`calc(100vw)- ${logoWidth}px`} gutter='0px'>
                 <Switch>
                     <Route exact path='/form' component={Form}/>
+                    <Route exact path='/table' component={TableForm}/>
                 </Switch>
             </Col>
 

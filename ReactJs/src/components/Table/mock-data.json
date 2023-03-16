@@ -2,11 +2,29 @@
     {
       "id": 1,
       "name": "Jenny Chan",
-      "email": "jenny.chan@email.com"
+      "email": "jenny.chan@email.com",
+      "birthday": "19.12.1995",
+      "password": "blablabla"
     },
     {
       "id": 2,
       "name": "Jessica warren",
-      "email": "jessica.warren@email.com"
+      "email": "jessica.warren@email.com",
+      "birthday": "19.12.1995",
+      "password": "blablabla"
+    },
+    {
+      "id": 2,
+      "name": "NEW_CONTACT",
+      "email": "jessica.warren@email.com",
+      "birthday": "19.12.1995",
+      "password": "blablabla"
+    },
+    {
+      "id": 2,
+      "name": "NEW_CONTACT",
+      "email": "jessica.warren@email.com",
+      "birthday": "19.12.1995",
+      "password": "blablabla"
     }
   ]

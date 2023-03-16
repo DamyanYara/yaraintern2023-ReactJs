@@ -8,6 +8,8 @@ const Form = () => {
     const [values, setValues] = useState({
         username: "",
         email: "",
+        birthday: "",
+        password: "",
     });
     const [text, setText] = useState('')
 
@@ -30,6 +32,24 @@ const Form = () => {
         placeholder: "Email",
         errorMessage:"It should be a valid Email!",
         label:"Email",
+        required: true
+    },
+    { 
+        id:3,
+        name:"birthday",
+        type: "date",
+        placeholder: "birthday",
+        errorMessage:"It should be a valid Email!",
+        label:"Birthday",
+    },
+    { 
+        id:4,
+        name:"password",
+        type: "password",
+        placeholder: "Password",
+        errorMessage:"Password should be 8-20 characters!",
+        label:"Password",
+        pattern: "^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$",
         required: true
     }
     ]
