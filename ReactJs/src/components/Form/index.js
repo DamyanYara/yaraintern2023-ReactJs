@@ -47,7 +47,7 @@ const Form = () => {
         name:"country",
         type: "text",
         placeholder: "Country",
-        errorMessage:"Password should be 8-20 characters!",
+        errorMessage:"",
         label:"Country",
         required: true
     }

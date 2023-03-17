@@ -66,9 +66,9 @@ const TableForm = () => {
                 </tbody>
             </table>
             <details>
-                <summary style={{padding:30, color:"lightblue"}}>Add a new User</summary>
+                <summary style={{padding:30, color:"brown"}}>Add a new User</summary>
                 <form onSubmit={handleAddFormSubmit}> 
-                    <input type="text" name="name" required="required" placeholder="Name" onChange={handleAddFormChange}></input>
+                    <input type="text" name="name" required="required" placeholder="Name"  onChange={handleAddFormChange}></input>
                     <input type="email" name="email" required="required" placeholder="Email" onChange={handleAddFormChange}></input>
                     <input type="date" name="birthday" required="required" placeholder="Birthday" onChange={handleAddFormChange}></input>
                     <input type="text" name="country" required="required" placeholder="Country" onChange={handleAddFormChange}></input>

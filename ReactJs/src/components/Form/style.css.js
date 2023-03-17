@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export  const StyledForm = styled.form`
+width: 600px;
 display: flex;
 flex-direction: column;
 align-items: center;
 jistify- content: center;
 padding: 30px;
+background-color: lightgrey;
 `;
 
 export const StyledFormInput = styled.div`
@@ -16,7 +18,8 @@ margin-top: 20px;
 `;
 
 export const StyledLabel = styled.label`
-margin-bottom: 10px
+margin-bottom: 10px;
+color: #008b8b
 `;
 
 export const StyledSpan = styled.span`

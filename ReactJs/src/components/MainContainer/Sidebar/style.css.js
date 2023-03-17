@@ -2,7 +2,7 @@ import styled  from "styled-components";
 
 export const StyledSidebar = styled.div`
 height: 100%;
-background: aqua;
+background: grey;
 display: flex;
 flex-direction: column;
 align-items: center;
