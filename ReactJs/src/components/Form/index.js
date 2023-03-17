@@ -9,7 +9,7 @@ const Form = () => {
         username: "",
         email: "",
         birthday: "",
-        password: "",
+        country: "",
     });
     const [text, setText] = useState('')
 
@@ -44,12 +44,11 @@ const Form = () => {
     },
     { 
         id:4,
-        name:"password",
-        type: "password",
-        placeholder: "Password",
+        name:"country",
+        type: "text",
+        placeholder: "Country",
         errorMessage:"Password should be 8-20 characters!",
-        label:"Password",
-        pattern: "^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$",
+        label:"Country",
         required: true
     }
     ]
@@ -71,6 +70,7 @@ const Form = () => {
         <div className="form">
             
             <StyledForm onSubmit={handleSubmit}>
+                <h3>User Form</h3>
                 {inputs.map((input) => (
                     <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/>
                 ))}

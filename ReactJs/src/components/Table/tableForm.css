@@ -1,0 +1,24 @@
+.TableForm-container{
+width: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 30px;
+}
+
+table{
+    width: 100%;
+}
+thead tr{
+    background-color: aquamarine;
+    height: 30px;
+}
+tbody td{
+    text-align: center;
+    
+}
+
+tbody tr{
+    height: 30px;
+}
